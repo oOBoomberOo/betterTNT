@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "BetterTNT v1.2.2",
+		"description": "",
+		"icon": {
+			"item": "minecraft:tnt"
+		},
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "boomber:root",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
