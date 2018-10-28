@@ -1,0 +1,144 @@
+{
+  "normal": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block> store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\"},Time:1b,DropItem:1b}"
+  ],
+  "axis": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[axis=x] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{axis:\"x\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[axis=y] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{axis:\"y\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[axis=z] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{axis:\"z\"}},Time:1b,DropItem:1b}"
+  ],
+  "slab": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[type=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{type:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[type=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{type:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[type=double] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{type:\"double\"}},Time:1b,DropItem:1b}"
+  ],
+  "stair": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",half:\"bottom\"}},Time:1b,DropItem:1b}"
+  ],
+  "trapdoor": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,half=top] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",half:\"top\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",half:\"bottom\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,half=bottom] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",half:\"bottom\"}},Time:1b,DropItem:1b}"
+  ],
+  "2d_rotation": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\"}},Time:1b,DropItem:1b}"
+  ],
+  "3d_rotation": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=up] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"up\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=down] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"down\"}},Time:1b,DropItem:1b}"
+  ],
+  "fence_gate": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,open=false] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",open:\"false\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,open=false] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",open:\"false\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,open=false] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",open:\"false\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,open=false] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",open:\"false\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east,open=true] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\",open:\"true\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west,open=true] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\",open:\"true\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south,open=true] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\",open:\"true\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north,open=true] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\",open:\"true\"}},Time:1b,DropItem:1b}"
+  ],
+  "hopper": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"north\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[facing=down] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{facing:\"down\"}},Time:1b,DropItem:1b}"
+  ],
+  "skull": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=0] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"0\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=1] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"1\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=2] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"2\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=3] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"3\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=4] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"4\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=5] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"5\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=6] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"6\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=7] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"7\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=8] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"8\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=9] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"9\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=10] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"10\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=11] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"11\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=12] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"12\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=13] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"13\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=14] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"14\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[rotation=15] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{rotation:\"15\"}},Time:1b,DropItem:1b}"
+  ],
+  "button": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=floor,facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"floor\",facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=floor,facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"floor\",facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=floor,facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"floor\",facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=floor,facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"floor\",facing:\"north\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=wall,facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"wall\",facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=wall,facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"wall\",facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=wall,facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"wall\",facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=wall,facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"wall\",facing:\"north\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=ceiling,facing=east] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"ceiling\",facing:\"east\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=ceiling,facing=west] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"ceiling\",facing:\"west\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=ceiling,facing=south] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"ceiling\",facing:\"south\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[face=ceiling,facing=north] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{face:\"ceiling\",facing:\"north\"}},Time:1b,DropItem:1b}"
+  ],
+  "cake": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=0] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"0\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=1] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"1\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=2] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"2\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=3] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"3\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=4] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"4\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=5] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"5\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[bites=6] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{bites: \"6\"}},Time:1b,DropItem:1b}"
+  ],
+  "note_block": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=0] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"0\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=1] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"1\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=2] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"2\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=3] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"3\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=4] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"4\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=5] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"5\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=6] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"6\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=7] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"7\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=8] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"8\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=9] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"9\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=10] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"10\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=11] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"11\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=12] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"12\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=13] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"13\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=14] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"14\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=15] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"15\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=16] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"16\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=17] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"17\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=18] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"18\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=19] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"19\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=20] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"20\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=21] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"21\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=22] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"22\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=23] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"23\"}},Time:1b,DropItem:1b}",
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[note=24] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{note: \"24\"}},Time:1b,DropItem:1b}"
+  ],
+  "transform": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block> store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<convert_to>\"},Time:1b,DropItem:1b}"  
+  ],
+  "custom": [
+    "execute unless score @s bb.success matches 1.. if block ~ ~ ~ <block>[<block_state>] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{<nbt_state>}},Time:1b,DropItem:1b}"  
+  ],
+  "end": [
+    "execute as @s[scores={bb.success=1..}] run setblock ~ ~ ~ air",
+    "scoreboard players set @s bb.success 0"
+  ]
+}
