@@ -1,0 +1,18 @@
+{
+  "normal": [
+    "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block> store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\"},Time:1b,DropItem:1b}"
+  ],
+  "number": [
+    "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block>[<block_state>] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{<nbt_state>}},Time:1b,DropItem:1b}"
+  ],
+  "state": [
+    "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block>[<block_state>] store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<block>\",Properties:{<nbt_state>}},Time:1b,DropItem:1b}"
+  ],
+  "transform": [
+    "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block> store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<transform>\"},Time:1b,DropItem:1b}"  
+  ],
+  "end": [
+    "execute as @s[scores={bb.success=1..}] run setblock ~ ~ ~ air",
+    "scoreboard players set @s bb.success 0"
+  ]
+}

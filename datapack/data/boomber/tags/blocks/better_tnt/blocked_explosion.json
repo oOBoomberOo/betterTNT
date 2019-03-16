@@ -3,7 +3,7 @@
     "minecraft:water",
     "minecraft:lava",
     "minecraft:bedrock",
-		"minecraft:obsidian",
+    "minecraft:obsidian",
     "minecraft:command_block",
     "minecraft:chain_command_block",
     "minecraft:repeating_command_block"
