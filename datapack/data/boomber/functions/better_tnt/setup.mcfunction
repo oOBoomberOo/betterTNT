@@ -1,1 +1,2 @@
 scoreboard objectives add bb.success dummy
+gamerule maxCommandChainLength 1000000

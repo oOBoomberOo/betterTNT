@@ -11,8 +11,16 @@
   "transform": [
     "execute as @s[scores={bb.success=0}] if block ~ ~ ~ <block> store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:\"<transform>\"},Time:1b,DropItem:1b}"  
   ],
+  "start": [
+    "scoreboard players set @s bb.success 0"
+  ],
   "end": [
     "execute as @s[scores={bb.success=1..}] run setblock ~ ~ ~ air",
     "scoreboard players set @s bb.success 0"
-  ]
+  ],
+  "tnt": {
+    "start": "scoreboard players set @s bb.success 0",
+    "whatever": "execute as @s positioned ~<x> ~<y> ~<z> unless block ~ ~ ~ #boomber:better_tnt/ignore_block run particle happy_villager ~ ~ ~ 0 0 0 0 1 normal @a",
+    "command": "execute as @s positioned ~<x> ~<y> ~<z> unless block ~ ~ ~ #boomber:better_tnt/ignore_block run function boomber:better_tnt/falling_block"
+  }
 }

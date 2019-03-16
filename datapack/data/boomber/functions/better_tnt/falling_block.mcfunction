@@ -1,4 +1,5 @@
-execute as @s[scores={bb.success=0}] if block ~ ~ ~ minecraft:stone store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:"minecraft:cobblestone"},Time:1b,DropItem:1b}
+scoreboard players set @s bb.success 0
+execute as @s[scores={bb.success=0}] if block ~ ~ ~ minecraft:stone store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:"minecraft:stone"},Time:1b,DropItem:1b}
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ minecraft:granite store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:"minecraft:granite"},Time:1b,DropItem:1b}
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ minecraft:andesite store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:"minecraft:andesite"},Time:1b,DropItem:1b}
 execute as @s[scores={bb.success=0}] if block ~ ~ ~ minecraft:diorite store success score @s bb.success run summon falling_block ~ ~0.4 ~ {BlockState:{Name:"minecraft:diorite"},Time:1b,DropItem:1b}

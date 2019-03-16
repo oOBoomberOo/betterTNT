@@ -62,6 +62,7 @@ def parser(string):
 def better_tnt():
   blocks = open('blocks.list').readlines()
   file = create_file('./output/falling_block.mcfunction')
+  file.write('\n'.join(command['start']) + '\n')
   for block in blocks:
     if block[0] is '#':
       break
@@ -101,7 +102,15 @@ def transform(block_data, file):
   lines = '\n'.join(command['transform']).replace('<block>', block_data['id']).replace('<transform>', block_data['state']['transform'][0])
   file.write(lines + '\n')
 
+def tnt():
+  radius = 2
+  lines = [command['tnt']['start']]
+  for (x, y, z) in itertools.product(range(-radius, radius + 1), repeat=3):
+    lines.append(command['tnt']['command'].replace('<x>', str(x)).replace('<y>', str(y)).replace('<z>', str(z)))
+  with create_file('./output/tnt.mcfunction') as f:
+    f.write('\n'.join(lines))
 
 functions = {'normal': normal, 'number': number, 'state': state, 'transform': transform}
 command = json.load(open('command.json'))
 better_tnt()
+tnt()

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"title": "BetterTNT: Reloaded v1.0",
-		"description": "Improved TNT",
+		"description": "TNT that's explode",
 		"icon": {
 			"item": "minecraft:tnt"
 		},
