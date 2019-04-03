@@ -144,7 +144,7 @@ minecraft:brown_terracotta
 minecraft:green_terracotta
 minecraft:red_terracotta
 minecraft:black_terracotta
-minecraft:hay_block
+minecraft:hay_block (state) [axis=[x, y, z]]
 minecraft:terracotta
 minecraft:coal_block
 minecraft:packed_ice
@@ -173,6 +173,7 @@ minecraft:chiseled_red_sandstone
 minecraft:cut_red_sandstone
 minecraft:magma_block
 minecraft:nether_wart_block
+minecraft:red_nether_bricks
 minecraft:bone_block (state) [axis=[x, y, z]]
 minecraft:white_concrete
 minecraft:orange_concrete
@@ -234,34 +235,13 @@ minecraft:prismarine_stairs (state) [waterlogged=false, facing=[east, west, nort
 minecraft:prismarine_brick_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
 minecraft:dark_prismarine_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
 minecraft:red_sandstone_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:polished_granite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:smooth_red_sandstone_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:mossy_stone_brick_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:polished_diorite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:mossy_cobblestone_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:end_stone_brick_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:stone_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:smooth_sandstone_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:smooth_quartz_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:granite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:andesite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:red_nether_brick_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:polished_andesite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:diorite_stairs (state) [waterlogged=false, facing=[east, west, north, south], half=[top, bottom]]
-minecraft:polished_granite_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:smooth_red_sandstone_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:mossy_stone_brick_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:polished_diorite_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:mossy_cobblestone_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:end_stone_brick_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:smooth_sandstone_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:smooth_quartz_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:granite_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:andesite_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:red_nether_brick_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:polished_andesite_slab (state) [waterlogged=false, type=[top, bottom, double]]
-minecraft:diorite_slab (state) [waterlogged=false, type=[top, bottom, double]]
 minecraft:dried_kelp_block
+minecraft:oak_leaves (state) [persistent=[true, false]]
+minecraft:spruce_leaves (state) [persistent=[true, false]]
+minecraft:birch_leaves (state) [persistent=[true, false]]
+minecraft:jungle_leaves (state) [persistent=[true, false]]
+minecraft:acacia_leaves (state) [persistent=[true, false]]
+minecraft:dark_oak_leaves (state) [persistent=[true, false]]
 minecraft:torch
 minecraft:wall_torch (transform) [transform=minecraft:torch]
 minecraft:end_rod (state) [facing=[east, west, north, south, up, down]]
@@ -283,21 +263,10 @@ minecraft:infested_chiseled_stone_bricks
 minecraft:iron_bars (state) [waterlogged=false]
 minecraft:glass_pane (state) [waterlogged=false]
 minecraft:nether_brick_fence (state) [waterlogged=false]
+minecraft:enchanting_table
 minecraft:ender_chest (state) [waterlogged=false, facing=[east, west, south, north]]
 minecraft:cobblestone_wall (state) [waterlogged=false]
 minecraft:mossy_cobblestone_wall (state) [waterlogged=false]
-minecraft:brick_wall (state) [waterlogged=false]
-minecraft:prismarine_wall (state) [waterlogged=false]
-minecraft:red_sandstone_wall (state) [waterlogged=false]
-minecraft:mossy_stone_brick_wall (state) [waterlogged=false]
-minecraft:granite_wall (state) [waterlogged=false]
-minecraft:stone_brick_wall (state) [waterlogged=false]
-minecraft:nether_brick_wall (state) [waterlogged=false]
-minecraft:andesite_wall (state) [waterlogged=false]
-minecraft:red_nether_brick_wall (state) [waterlogged=false]
-minecraft:sandstone_wall (state) [waterlogged=false]
-minecraft:end_stone_brick_wall (state) [waterlogged=false]
-minecraft:diorite_wall (state) [waterlogged=false]
 minecraft:anvil (state) [facing=[east, west, north, south]]
 minecraft:chipped_anvil (state) [facing=[east, west, north, south]]
 minecraft:damaged_anvil (state) [facing=[east, west, north, south]]
@@ -362,11 +331,9 @@ minecraft:potted_orange_tulip
 minecraft:potted_white_tulip
 minecraft:potted_pink_tulip
 minecraft:potted_oxeye_daisy
-minecraft:potted_cornflower
-minecraft:potted_lily_of_the_valley
-minecraft:potted_wither_rose
 minecraft:potted_brown_mushroom
 minecraft:potted_red_mushroom
+minecraft:potted_fern
 minecraft:potted_cactus
 minecraft:potted_oak_sapling
 minecraft:potted_spruce_sapling
@@ -375,7 +342,6 @@ minecraft:potted_jungle_sapling
 minecraft:potted_acacia_sapling
 minecraft:potted_dark_oak_sapling
 minecraft:potted_dead_bush
-minecraft:potted_bamboo
 minecraft:skeleton_skull (number) [rotation=0..15]
 minecraft:skeleton_wall_skull (transform) [transform=minecraft:skeleton_skull]
 minecraft:wither_skeleton_skull (number) [rotation=0..15]
@@ -386,15 +352,6 @@ minecraft:creeper_head (number) [rotation=0..15]
 minecraft:creeper_wall_head (transform) [transform=minecraft:creeper_head]
 minecraft:dragon_head (number) [rotation=0..15]
 minecraft:dragon_wall_head (transform) [transform=minecraft:dragon_head]
-minecraft:loom (state) [facing=[east, west, north, south]]
-minecraft:cartography_table
-minecraft:fletching_table
-minecraft:grindstone (state) [face=[floor, ceiling, wall], facing=[east, west, north, south]]
-minecraft:smithing_table
-minecraft:stonecutter (state) [facing=[east, west, north, south]]
-minecraft:bell (state) [attachment=[floor, ceiling, single_wall, double_wall], facing=[east, west, north, south]]
-minecraft:lantern
-minecraft:campfire (state) [facing=[east, west, north, south], lit=[false, true], waterlogged=false]
 minecraft:note_block (number) [note=0..24]
 minecraft:lever (state) [facing=[east, west, north, south], face=[floor, wall, ceiling]]
 minecraft:stone_pressure_plate
@@ -440,6 +397,5 @@ minecraft:detector_rail
 minecraft:rail
 minecraft:activator_rail
 minecraft:conduit (state) [waterlogged=false]
-minecraft:composter (number) [level=0..8]
 minecraft:cake (number) [bites=0..6]
 minecraft:cauldron (number) [level=0..3]
